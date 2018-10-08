@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+attributeFormDefault="unqualified">
+    <xs:simpleType name="id">
+        <xs:restriction base="xs:int">
+            <xs:minInclusive value="1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element name="title" type="string"/>
+    <xs:element name="genre" type="string"/>
+</xs:schema>
+
+<movies>
+    <movie>
+        <id>1</id>
+        <title>The sixth sence</title>
+        <genre>Thriller</genre>
+    </movie>
+    <movie>
+        <id>2</id>
+        <title>Plop in de Wolken</title>
+        <genre>Horror</genre>
+    </movie>
+    <movie>
+        <id>3</id>
+        <title>Pearl Harbor</title>
+        <genre>Comedy</genre>
+    </movie>
+</movies>
